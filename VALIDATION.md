@@ -1,0 +1,51 @@
+# Version 2 validation
+
+- 32 automated tests passed on Windows with Python 3.12.4.
+- Tests include the real background-job worker lifecycle and FastAPI authentication/route integration, with cloud/build execution mocked.
+- Every Python source file parsed successfully.
+- Dashboard JavaScript passed Node syntax checks.
+- Windows setup script passed the PowerShell parser.
+- No live Gemini generation, microphone, physical phone, Windows speech playback, dependency setup of the full app, or actual sign-in/reboot was exercised.
+- API tests used FastAPI 0.141.1, Starlette 1.6.0 and Uvicorn 0.53.0 in workspace-only test dependencies. The installed HTTPX test adapter emitted a deprecation warning but all requests passed.
+- The updated assistant is packaged, not installed or registered for startup on this PC. Run Setup Windows.cmd to install and register it.
+
+## Files changed or added relative to the uploaded archive
+
+- `.gitignore`
+- `Disable Autostart.cmd`
+- `IMPROVEMENTS.md`
+- `START-HERE.md`
+- `Setup Windows.cmd`
+- `Start Jarvis.vbs`
+- `VALIDATION.md`
+- `actions/code_helper.py`
+- `actions/computer_control.py`
+- `actions/computer_settings.py`
+- `actions/desktop.py`
+- `actions/dev_agent.py`
+- `actions/file_processor.py`
+- `actions/flight_finder.py`
+- `actions/notes.py`
+- `actions/project_jobs.py`
+- `actions/reminder.py`
+- `actions/system_monitor.py`
+- `actions/task_manager.py`
+- `actions/web_search.py`
+- `actions/youtube_video.py`
+- `core/battery.py`
+- `core/dashboard_tls.py`
+- `core/jobs.py`
+- `core/productivity_store.py`
+- `core/prompt.txt`
+- `core/single_instance.py`
+- `dashboard/project_api.py`
+- `dashboard/server.py`
+- `dashboard/static/app.html`
+- `launch.py`
+- `main.py`
+- `memory/config_manager.py`
+- `readme.md`
+- `setup_windows.ps1`
+- `tests/test_improvements.py`
+- `tests/test_runtime.py`
+- `ui.py`

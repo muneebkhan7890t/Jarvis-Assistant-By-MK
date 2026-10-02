@@ -1,0 +1,13 @@
+{
+  "gemini_api_key": "",
+  "assistant_name": "JARVIS",
+  "remote_control_enabled": false,
+  "lan_access_enabled": false,
+  "allow_device_pairing": false,
+  "legacy_remote_enabled": false,
+  "remote_private_url": "",
+  "remote_features": {"computer": false, "commands": false, "chat": false, "voice": false, "screen": false, "files": false, "projects": false, "workflows": false, "automations": false},
+  "remote_file_roots": [],
+  "assistant_mode": "auto",
+  "language": "auto"
+}

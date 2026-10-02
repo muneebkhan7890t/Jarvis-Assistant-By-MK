@@ -1,0 +1,59 @@
+# ── Core: UI, audio, Gemini Live ──────────────────────────────────────────────
+PyQt6==6.11.0
+sounddevice==0.5.6
+numpy==2.4.3
+google-genai==2.24.0
+
+# ── Web search & browser control ──────────────────────────────────────────────
+requests==2.34.2
+beautifulsoup4==4.12.3
+duckduckgo-search==8.1.1
+playwright==1.63.0
+
+# ── Automation / input control ────────────────────────────────────────────────
+pyautogui==0.9.54
+pyperclip==1.11.0
+pygetwindow==0.0.9
+
+# ── Vision & media ────────────────────────────────────────────────────────────
+pillow==12.1.0
+opencv-python==4.13.0.92
+mss==10.2.0
+
+# ── System, files & documents ─────────────────────────────────────────────────
+psutil==6.0.0
+send2trash==1.8.3
+youtube-transcript-api==1.2.4
+python-pptx==1.0.2
+openpyxl==3.1.5
+
+# ── Remote dashboard (control from your phone) ────────────────────────────────
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+cryptography==46.0.3
+python-multipart==0.0.32
+qrcode[pil]==8.2
+
+# ── Plugin extras: Gmail / Google Calendar (OAuth) ────────────────────────────
+google-api-python-client==2.200.0
+google-auth-oauthlib==1.4.1
+
+# ── Plugin extras: Tuya / Smart Life smart light (home_assistant) ─────────────
+tinytuya==1.20.0
+
+# ── Windows-only (pip skips these automatically on macOS / Linux) ─────────────
+comtypes==1.4.16;   sys_platform == "win32"
+pycaw==20251023;      sys_platform == "win32"
+win10toast==0.9; sys_platform == "win32"
+pywinauto==0.6.9;  sys_platform == "win32"
+pywin32==308;    sys_platform == "win32"
+wmi==1.5.1;        sys_platform == "win32"
+
+# ── Optional: local wake word ("Hey Jarvis") ──────────────────────────────────
+# Deliberately NOT installed by default — it's opt-in. Enable it (and download
+# the tiny model) with one click from ⚙ → WAKE WORD in the app, or install it
+# yourself with:  pip install openwakeword
+#
+# macOS / Linux OS actions (volume, brightness, reminders) shell out to native
+# tools (pactl / brightnessctl / osascript / systemd), so no extra Python
+# packages are needed there — nothing Windows-specific is ever pulled in.

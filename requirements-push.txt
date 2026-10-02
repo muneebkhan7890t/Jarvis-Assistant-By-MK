@@ -1,0 +1,3 @@
+# Optional encrypted background browser notifications.
+pywebpush==2.3.0
+cryptography==46.0.3
